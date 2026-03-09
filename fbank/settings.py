@@ -136,7 +136,7 @@ EMAIL_PORT = 587                        # TLS port
 
 EMAIL_USE_TLS = True
 
-EMAIL_HOST_USER = "saruna7416@gmail.com"    
+EMAIL_HOST_USER = "xxxxxxxxxx@gmail.com"    
 
-EMAIL_HOST_PASSWORD = "vmkx eqgp zgsh ujtv"   # App password (not your Gmail password)
+EMAIL_HOST_PASSWORD = "xxxx xxxx xxxx xxxx"   
 
