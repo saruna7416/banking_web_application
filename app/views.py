@@ -216,6 +216,3 @@ def otp_validation(request):
             msg = "otp mismatch"
     return render(request,"otp_validation.html",{"msg":msg})
 
-
-
-# vmkx eqgp zgsh ujtv
