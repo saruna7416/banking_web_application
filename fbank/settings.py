@@ -136,7 +136,8 @@ EMAIL_PORT = 587                        # TLS port
 
 EMAIL_USE_TLS = True
 
-EMAIL_HOST_USER = "xxxxxxxxxx@gmail.com"    
+EMAIL_HOST_USER = "xxxxxxxxxxxxxx"    
 
 EMAIL_HOST_PASSWORD = "xxxx xxxx xxxx xxxx"   
+
 
