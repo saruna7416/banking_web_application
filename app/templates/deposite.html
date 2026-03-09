@@ -1,0 +1,27 @@
+{% extends 'main.html' %}
+{% block content %}
+<style>
+     .spline{
+        height: 400px;
+        width: 400px;
+        
+     }
+</style>
+<div class="cover">
+
+
+ <h1>deposite cash</h1>
+
+<spline-viewer url="https://prod.spline.design/Y4xKYn6yokAUDzsr/scene.splinecode" class="spline"></spline-viewer>
+
+<form action="" method="post">
+   {% csrf_token %}
+   ACC <input type="number" name="acc" id=""> <br><br>
+   PIN <input type="password" name="pin" id=""> <br><br>
+   AMOUNT <input type="number" name="amt" id="">
+   <br><br>
+   <button type="submit">DEPOSIT</button>
+</form>
+
+</div>
+{% endblock content %}

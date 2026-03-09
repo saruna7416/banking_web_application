@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="post">
+        {% csrf_token %}
+        PHONE <input type="number" name="mobile" id="">
+        <br><br>
+        OTP <input type="password" name="notp" id="">
+        <br><br>
+        CONFIRM OTP <input type="password" name="cotp" id="">
+        <br><br>
+        NEW PIN <input type="password" name="npin" id=""> <br><br>
+        CONFIRM PIN <input type="password" name="cpin" id=""> <br><br>
+
+        <button type="submit">SUBMIT</button>
+    </form>
+    {{msg}}
+</body>
+</html>

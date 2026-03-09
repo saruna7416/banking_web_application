@@ -1,0 +1,35 @@
+{% extends 'main.html' %}
+{% block content %}
+<style>
+   div{
+      display: flex;
+   }
+     /* .spline{
+        height: 400px;
+        width: 400px;
+        
+     } */
+</style>
+<div class="cover">
+
+<dotlottie-wc
+  src="https://lottie.host/624394f4-557f-4db3-ba71-16b78ed56ae3/CHLgYqb0cf.lottie"
+  style="width: 300px;height: 300px"
+  speed="1"
+  autoplay
+  loop
+></dotlottie-wc>
+<!-- <spline-viewer url="https://prod.spline.design/rUJZyNZMdQKqCfus/scene.splinecode" class="spline"></spline-viewer> -->
+
+<h1>pin generation</h1>
+<div>
+   <form action="" method="post">
+      {% csrf_token %}
+      ACCOUNT NUMBER <input type="number" name="acc" id="">
+      <br><br>
+      <button type="submit">GENERATE OTP</button>
+   </form>
+</div>
+
+</div>
+{% endblock content %}

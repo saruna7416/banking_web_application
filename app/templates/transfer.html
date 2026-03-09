@@ -1,0 +1,53 @@
+{% extends 'main.html' %}
+{% block content %}
+<style>
+   .over{
+      display: flex;
+    justify-content: space-around; /* space between animation and form */
+    align-items: center;
+    height: 100vh; /* full page height */
+    padding: 20px;
+   }
+   .spline{
+        height: 300px;
+        width: 300px;
+        
+   }
+   .form-box {
+      margin-left: 200px;
+    background: rgba(255, 255, 255, 0.6);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+
+    button{
+      color: red;
+      justify-content: center;
+    }
+   }
+</style>
+ <h1>cash transfer</h1>
+<div class="over">
+   
+      <spline-viewer url="https://prod.spline.design/idBPo8pJQjr6062t/scene.splinecode" class="spline"></spline-viewer>
+  
+      <form class="form-box" method="post">
+         {% csrf_token %}
+         <label>Sender Account </label>
+      <input type="text" name="sender_acc" required><br><br>
+      
+      <label>Receiver Account </label>
+      <input type="text" name="receiver_acc" required><br><br>
+      
+      <label>PIN </label>
+      <input type="password" name="pin" required><br><br>
+      
+      <label>Amount </label>
+      <input type="number" name="amt" required><br><br>
+      
+      <button type="submit">Transfer</button>
+
+      </form>
+   <p style="color:red">{{ msg }}</p>
+</div>
+{% endblock content %}

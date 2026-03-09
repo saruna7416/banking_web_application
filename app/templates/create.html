@@ -1,0 +1,78 @@
+
+{% extends 'main.html' %}
+{% block content %}
+
+<h1>WELCOME TO FINOVA BANK</h1>
+<div class="container">
+  <div id="lottie-container">
+  <dotlottie-wc
+    src="https://lottie.host/f79c93ea-8a83-45a3-8a4d-70d29d27e2cb/7Xck9PAgM3.lottie"
+    style="width: 300px;height: 300px"
+    speed="1"
+    autoplay
+    loop
+  ></dotlottie-wc>
+  </div>
+  
+  <!-- <spline-viewer class="background" url="https://prod.spline.design/ZYxMw9AX7miegQxi/scene.splinecode"></spline-viewer> -->
+  <main class="wrap">
+    <form class="card" action="" method="POST" novalidate >
+      {% csrf_token %}
+    
+      <!-- NAME -->
+      <div class="field">
+        <input placeholder=" " type="text" name="name" required>
+        <label>NAME</label>
+      </div>
+    
+      <!-- PHONE -->
+      <div class="field">
+        <input placeholder=" " type="tel" name="phone" required>
+        <label>PHONE</label>
+      </div>
+    
+      <!-- EMAIL --> 
+      <div class="field">
+        <input placeholder=" " type="email" name="mail" required>
+        <label>Email</label>
+      </div>
+    
+      <!-- ADDRESS -->
+      <div class="field">
+        <textarea placeholder=" " name="add" rows="3" required></textarea>
+        <label>ADDRESS</label>
+      </div>
+    
+      <!-- GENDER -->
+      <fieldset class="seg">
+        <legend>GENDER</legend>
+        <label><input type="radio" name="gen" value="Male" required><span>Male</span></label>
+        <label><input type="radio" name="gen" value="Female"><span>Female</span></label>
+        <label><input type="radio" name="gen" value="Others"><span>Others</span></label>
+      </fieldset>
+    
+      <!-- DOB -->
+      <div class="field">
+          <legend>DOB</legend>
+          <input type="date" name="date" id="">
+        
+        
+      </div>
+    
+      <!-- AADHAR -->
+      <div class="field">
+        <input placeholder=" " type="number" name="aadhar" required>
+        <label>AADHAR NUMBER</label>
+      </div>
+    
+      <!-- REAL BUTTON (demo uses hash to show modal) -->
+      <button class="btn" type="submit" >Submit</button>
+      <!-- For real backend: remove the formaction above and on success redirect to this page with #submitted -->
+    </form>
+  
+</div>
+
+<!-- </main>  -->
+
+
+{% endblock content %}

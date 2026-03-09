@@ -1,0 +1,19 @@
+{% extends 'main.html' %}
+{% block content %}
+<style>
+     .spline{
+        height: 400px;
+        width: 400px;
+        
+     }
+</style>
+<div class="over">
+ <h1>deleted account</h1>
+<!-- <spline-viewer url="https://prod.spline.design/QvzgqxGpkk2NF2dc/scene.splinecode" class="spline"></spline-viewer> -->
+<form action="" method="post">
+   {% csrf_token %}
+   ACC <input type="number" name="acc" id="">
+   <button type="submit">DELETE</button>
+</form>
+</div>
+{% endblock content %}
