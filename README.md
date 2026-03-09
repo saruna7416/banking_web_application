@@ -3,7 +3,7 @@
 A secure banking web application developed using Django.  
 This project simulates basic banking operations like account creation, deposit, withdrawal, fund transfer, and PIN generation using OTP verification.
 
-<img width="300" height="250" alt="image" src="https://github.com/user-attachments/assets/56ff7020-d5d7-4969-a6d8-3d129917ce71" />
+<img width="300" height="250" alt="Screenshot (334)" src="https://github.com/user-attachments/assets/efd2013b-f2f1-4010-9278-907872d049c6" />
 
 ## 🚀 Features
 
@@ -16,7 +16,7 @@ This project simulates basic banking operations like account creation, deposit, 
 - Balance checking (wallet feature)
 - Secure PIN encryption
 
-<img width="300" height="250" alt="image" src="https://github.com/user-attachments/assets/b7abbc39-4548-49f8-9d99-b9c493ec858a" />
+<img width="300" height="250" alt="image" src="https://github.com/user-attachments/assets/f294fa46-d1ae-4ddc-a719-771a1ecb7e1f" />
 
 ## 📂 Project Modules
 
@@ -28,7 +28,7 @@ This project simulates basic banking operations like account creation, deposit, 
 - Wallet Balance Check
 - Account Deletion
 
-<img width="300" height="250" alt="Screenshot 2026-03-05 171022" src="https://github.com/user-attachments/assets/8350c790-6f6c-460f-a941-d9896be9500f" />
+<img width="300" height="250" alt="image" src="https://github.com/user-attachments/assets/320a03c4-a503-4d95-8aea-48c8c5705fc4" />
 
 ## 🔐 Security Features
 
