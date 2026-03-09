@@ -45,7 +45,7 @@ def cash_withdraw(request):
                     data.save()
                     send_mail(
                         "WITHDRAW",
-                        f"mi bank account lo nunchi aksharala {amt} rs sai ram\nthank you boss\nlove you bache",
+                        f"Withdrawn {amt} from your bank account\nthank you..",
                         settings.EMAIL_HOST_USER,
                         [data.email],
                         fail_silently=False
@@ -76,7 +76,7 @@ def deposite(request):
                     if amt<=10000:
                         data.balance += amt
                         data.save()
-                        send_mail("DEPOSIT",f"mi bank account loki aksharala  {amt} rs vachi padayi \n thank you boss \n love you bache " ,settings.EMAIL_HOST_USER,[data.email],fail_silently=False)
+                        send_mail("DEPOSIT",f"Deposited {amt} rs in your bank account\n thank you.." ,settings.EMAIL_HOST_USER,[data.email],fail_silently=False)
                         return redirect("home")
                     else:
                         msg = "amt is aukat ke bahar"
@@ -91,7 +91,7 @@ def pincode(request):
         otp = randint(100000,999999)
         # print(otp)
         request.session['otp'] = otp
-        send_mail("PIN GENERATION ",f"ur one time password is {otp} please share it with our scamers only" ,settings.EMAIL_HOST_USER,[data.email],fail_silently=False)
+        send_mail("PIN GENERATION ",f"ur one time password is {otp} please don't share it with others" ,settings.EMAIL_HOST_USER,[data.email],fail_silently=False)
         return redirect('otp')
     return render(request,'pincode.html')
 
@@ -209,10 +209,11 @@ def otp_validation(request):
                 data.pin = encrypt(str(npin))
                 data.save()
                 msg = "pin genrated successfully"
-                send_mail("PIN GENERATED SUCCESSFULLY ","the pin has been generated and set to ur account please don't x=share it with other scamers only share with us \n thank you \n love you bache \n regards \n ibmc manager",settings.EMAIL_HOST_USER,[data.email],fail_silently=False)
+                send_mail("PIN GENERATED SUCCESSFULLY ","the pin has been generated and set to ur account please don't x=share it with other scamers only share with us \n thank you.. \n regards \n finova manager",settings.EMAIL_HOST_USER,[data.email],fail_silently=False)
             else:
                 msg = "pin mismatch"
         else:
             msg = "otp mismatch"
     return render(request,"otp_validation.html",{"msg":msg})
+
 
